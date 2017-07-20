@@ -2,6 +2,16 @@
 
 Userspace sit(IPv6 over IPv4) tunnel, designed for OpenVZ servers (require TUN device support).
 
+## Pre-builds ##
+
+Platform  | Architecture | URL
+----------|--------------|----
+GNU/Linux | x86_64       | https://s3.pxx.io/snapshot/sit/sit-x86_64
+&nbsp;    | armv6l       | https://s3.pxx.io/snapshot/sit/sit-armv6l
+&nbsp;    | armv7l       | https://s3.pxx.io/snapshot/sit/sit-armv7l
+&nbsp;    | aarch64      | https://s3.pxx.io/snapshot/sit/sit-aarch64
+
+
 ## Build ##
 
 ```bash
@@ -16,7 +26,7 @@ sudo ./sit <tun dev> remote local
 
 ## License ##
 
-Copyright (C) 2015, Xiaoxiao <i@xiaoxiao.im>
+Copyright (C) 2015 - 2017, Xiaoxiao <i@pxx.io>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
