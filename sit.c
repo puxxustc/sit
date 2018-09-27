@@ -225,11 +225,11 @@ static int runas(const char *user)
 
     if (pw_ent != NULL)
     {
-        if (setegid(pw_ent->pw_gid) != 0)
+        if (setgid(pw_ent->pw_gid) != 0)
         {
             return -1;
         }
-        if (seteuid(pw_ent->pw_uid) != 0)
+        if (setuid(pw_ent->pw_uid) != 0)
         {
             return -1;
         }
